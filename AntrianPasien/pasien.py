@@ -1,5 +1,5 @@
 class Pasien:
-    def __init__(self, nama, no=None, penyakit=None):
+    def __init__(self, nama, no, penyakit):
         self.nama = nama
         self.__noTelp = no
         self.__riwayatPenyakit = penyakit
@@ -24,3 +24,6 @@ print('\nRUMAH SAKIT MITRA KASIH\n-------')
 nama = input('Masukkan nama pasien: ')
 no = input('Masukkan nomor telepon: ')
 riwayat = input('Masukkan riwayat penyakit: ')
+
+pasien1 = Pasien(nama, no, riwayat)
+pasien1.info()
