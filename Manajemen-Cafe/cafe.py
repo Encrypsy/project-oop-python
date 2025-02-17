@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Order:
+class Order(ABC):
     def __init__(self, nama, menu, jumlah, harga):
         self.nama = nama
         self.menu = menu
@@ -11,7 +11,6 @@ class Order:
     def calculate_price (self):
         pass
 
-    @abstractmethod
     def order_info (self):
         print(f'''
 \nOrderan atas nama [{self.nama}]

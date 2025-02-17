@@ -6,6 +6,7 @@ class Pembayaran:
         self.total = total
         self.pembayaran = pembayaran
 
+    @abstractmethod
     def bayar():
         pass
 
